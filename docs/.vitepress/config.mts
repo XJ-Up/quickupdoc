@@ -3,8 +3,8 @@ import { defineConfig } from 'vitepress'
 // https://vitepress.dev/reference/site-config
 export default defineConfig({
   base: '/quickupdoc/', // 设置基本路径
-  title: "My Awesome Project",
-  description: "A VitePress Site",
+  title: "QuickUpLoad",
+  description: "一个让你轻松实现上传功能的框架",
   themeConfig: {
     // https://vitepress.dev/reference/default-theme-config
     nav: [
@@ -23,7 +23,7 @@ export default defineConfig({
     ],
 
     socialLinks: [
-      { icon: 'github', link: 'https://github.com/vuejs/vitepress' }
+      { icon: 'github', link: 'https://github.com/XJ-Up/quickupload' }
     ]
   }
 })
