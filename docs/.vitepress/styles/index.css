@@ -1,0 +1,10 @@
+@import "./tailwindcss.css";
+/* E1DCCD */
+:root {
+  /* 图标背景 */
+  --vp-home-hero-image-background-image: -webkit-linear-gradient(120deg, theme('colors.blue.500'), theme('colors.green.500'));
+  --vp-home-hero-image-filter: blur(450px);
+
+  --vp-home-hero-name-color: transparent;
+  --vp-home-hero-name-background: -webkit-linear-gradient(120deg, theme('colors.blue.500'), theme('colors.green.500'));
+}
