@@ -3,7 +3,7 @@ import { autoGenerateSidebar } from 'press-util'
 import vite from './vite.config'
 
 export default defineConfig({
-  base: '/',
+  base: '/quickupdoc/',
   appearance: true,
   title: 'XJ-UP Quick Upload',
   lastUpdated: true,
