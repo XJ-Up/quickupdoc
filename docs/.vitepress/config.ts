@@ -27,9 +27,16 @@ export default defineConfig({
     outline: [2, 4],
     outlineTitle: '目录',
     nav: [{
+      text: '👀 演示视频',
+      link: 'javascript:void(0)'
+      
+    },
+    {
       text: '🎯 使用文档',
       link: '/start.md'
-    }],
+      
+    }
+  ],
     sidebar: autoGenerateSidebar() as any,
     socialLinks: [
       {
@@ -39,4 +46,7 @@ export default defineConfig({
     ]
   },
   vite,
-})
+}
+
+
+)
