@@ -25,6 +25,7 @@ features:
 <script setup>
 import { onMounted } from 'vue';
 import Swal from 'sweetalert2';
+import '@/styles/index.css'
 onMounted(() => {
 // 选择所有 <span> 标签
   const spans = document.querySelectorAll('span');
@@ -35,15 +36,50 @@ onMounted(() => {
         // 设置点击事件
     span.addEventListener('click', function() {
       // 动态设置弹出框内容
-      Swal.fire({
+       Swal.fire({
+      title: '请选择模式',
+      html: `
+        <button id="button1" class="custom-button">单文件上传模式</button>
+        <button id="button2" class="custom-button">单文件上传模式多个文件上传</button>
+        <button id="button3" class="custom-button">多个文件同时上传模式</button>
+      `,
+      showConfirmButton: false,
+      showCancelButton: false
+    });
+
+    document.getElementById('button1').addEventListener('click', function() {
+ Swal.fire({
         imageUrl: './one.gif',
-         width: 857,
-        imageWidth: 857,
-        imageHeight: 563,
+        imageWidth: 248,
+        imageHeight: 508,
         imageAlt: 'Dynamic GIF',
         showConfirmButton: false,
         showCloseButton: true
       });
+     
+    });
+
+    document.getElementById('button2').addEventListener('click', function() {
+     Swal.fire({
+        imageUrl: './two.gif',
+        imageWidth: 248,
+        imageHeight: 508,
+        imageAlt: 'Dynamic GIF',
+        showConfirmButton: false,
+        showCloseButton: true
+      });
+    });
+
+    document.getElementById('button3').addEventListener('click', function() {
+ Swal.fire({
+        imageUrl: './three.gif',
+        imageWidth: 248,
+        imageHeight: 508,
+        imageAlt: 'Dynamic GIF',
+        showConfirmButton: false,
+        showCloseButton: true
+      });
+    });
     });
     }
   });
@@ -64,5 +100,5 @@ onMounted(() => {
 //           theme:'light-border',
 //         });
 })
- 
+       
 </script>
