@@ -25,7 +25,7 @@ features:
 <script setup>
 import { onMounted } from 'vue';
 import Swal from 'sweetalert2';
-import '@/styles/index.css'
+import '@/./styles/index.css'
 onMounted(() => {
 // 选择所有 <span> 标签
   const spans = document.querySelectorAll('span');
