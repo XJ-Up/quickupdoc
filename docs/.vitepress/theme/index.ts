@@ -2,7 +2,7 @@ import Theme from 'vitepress/theme'
 import type { Theme as ThemeType } from 'vitepress'
 import ui from '@/plugins/element-ui'
 import components from '@/components'
-import '@/./styles/index.css'
+import '@/styles/index.css'
 import 'virtual:svg-icons-register'
 import Layout from '@/layout/index.vue'
 export default {
